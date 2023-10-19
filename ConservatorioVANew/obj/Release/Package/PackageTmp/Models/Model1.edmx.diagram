@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b948b46f265346d982d2e5e01216e991" Name="Diagram1">
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Rol" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.sysdiagrams" Width="1.5" PointX="9.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Usuario" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_RolUsuario" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Alumno" Width="1.5" PointX="3.125" PointY="3.125" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Categoria" Width="1.75" PointX="7" PointY="0.5" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Instrumento" Width="1.625" PointX="3.125" PointY="0.5" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Profesor" Width="1.5" PointX="5.25" PointY="3.125" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.Registro" Width="1.75" PointX="7.25" PointY="3.125" />
+        <EntityTypeShape EntityType="db_a6dce2_mozartvaModel.TipoCategoria" Width="1.875" PointX="9.25" PointY="0.5" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_InstrumentoAlumno" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_ProfesorAlumno" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_Categoria" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_TipoCategoria" />
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_Instrumento" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="db_a6dce2_mozartvaModel.fk_Responsable" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
