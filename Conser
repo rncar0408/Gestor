@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylén Martínez Piano & Música</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(70, 60, 100, 0.6), rgba(70, 60, 100, 0.6)), url('https://images.unsplash.com/photo-1587287048589-df598b8b05c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            z-index: 1;
+        }
+
+        .hero-section>* {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 3rem;
+            color: #555;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #a38ed4;
+            border-color: #a38ed4;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #8a64b0;
+            border-color: #8a64b0;
+        }
+
+        .social-icons a {
+            color: #775c8d;
+            font-size: 28px;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #a38ed4;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            color: #775c8d;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: #463c68;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #463c68;
+        }
+
+        .navbar-light .navbar-toggler {
+            border-color: #463c68;
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            content: "";
+            background: no-repeat center center;
+            background-size: 100%;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(70, 60, 100, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aylén Martínez Piano & Música</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clases">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1>Aylén Martínez <br> Piano & Música</h1>
+            <p>Descubre la magia de la música y despierta tu talento con nosotros.</p>
+            <a href="#contacto" class="btn btn-light btn-lg">¡Inicia tu Aventura Musical!</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="card shadow-sm border-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-6">
+                        <div style="height: 400px; overflow: hidden;">
+                            <img src="imagenes/AM.jpg" alt="Aylén Martínez" class="img-fluid"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="card-body">
+                            <p class="card-text">En Aylén Martínez Piano & Música, creemos en el poder transformador de la
+                                música. Nuestra misión es proporcionar una educación musical integral y personalizada, que
+                                inspire a nuestros estudiantes a descubrir y desarrollar su potencial artístico. Con una
+                                metodología innovadora y un ambiente de aprendizaje estimulante, te acompañamos en cada
+                                paso de tu camino musical.</p>
+                            <p class="card-text">Ofrecemos clases de piano para todas las edades y niveles, adaptándonos a
+                                tus necesidades y objetivos individuales. Ya sea que estés comenzando tu viaje musical o
+                                buscando perfeccionar tu técnica, te brindamos las herramientas y el apoyo necesarios para
+                                alcanzar tus sueños.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Classes Section -->
+    <section id="clases" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestras Clases</h2>
+            <div id="clasesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1587287048589-df598b8b05c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100" alt="Iniciación Musical" style="max-height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Iniciación Musical</h5>
+                            <p>Explora el mundo de la música desde cero. ¡Un viaje emocionante te espera!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1505628353041-45213d3a0f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100" alt="Clases para Niños" style="max-height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Clases para Niños</h5>
+                            <p>Desarrolla tu talento musical a temprana edad. ¡Aprende jugando!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1557149049-749e6f903a7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100" alt="Clases para Jóvenes" style="max-height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Clases para Jóvenes</h5>
+                            <p>Eleva tu pasión musical a otro nivel. ¡Desafía tus límites!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1550547264-b01418ef6053?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="d-block w-100" alt="Clases para Adultos" style="max-height: 400px; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Clases para Adultos</h5>
+                            <p>Cumple tu sueño de tocar el piano. ¡Nunca es tarde para empezar!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#clasesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#clasesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Déjanos tu mensaje</h4>
+                    <p>Estaremos encantados de responder a tus preguntas:</p>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Tu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu Mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Nuestra Información</h4>
+                    <p><strong>Dirección:</strong> [Tu Dirección Aquí]</p>
+                    <p><strong>Teléfono:</strong> [Tu Teléfono Aquí]</p>
+                    <p><strong>Email:</strong> [Tu Email Aquí]</p>
+                    <h4>Conecta con Nosotros</h4>
+                    <div class="social-icons">
+                        <a href="https://wa.me/5493543300004" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/[Tu Usuario de Instagram]" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Aylén Martínez Piano & Música</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        // Inicializar el carrusel automáticamente
+        var carouselElement = document.querySelector('#clasesCarousel')
+        var carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 3000,  // Cambia de slide cada 3 segundos
+            touch: false   // Deshabilita el deslizamiento táctil
+        })
+    </script>
+
+</body>
+
+</html>
